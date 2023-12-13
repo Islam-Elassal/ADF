@@ -1,0 +1,9 @@
+{
+	"name": "Datafact0ry2024",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "02c2efb9-4064-4649-a82c-801c9abe9000",
+		"tenantId": "2c2b2d31-2e3e-4df1-b571-fb37c042ff1b"
+	}
+}
