@@ -1,0 +1,22 @@
+{
+	"name": "MoveFIlesToarchive",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Emplinkedserviceconnectiontoblobstorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "archivefolder"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

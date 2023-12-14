@@ -1,0 +1,22 @@
+{
+	"name": "PLSource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Emplinkedserviceconnectiontoblobstorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "sourcefolderorcontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
