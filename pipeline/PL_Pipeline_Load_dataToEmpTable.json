@@ -20,7 +20,7 @@
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
-							"wildcardFileName": "Emp*.txt",
+							"wildcardFileName": "Emp*.csv",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
@@ -58,14 +58,9 @@
 			{
 				"name": "Copy Files to ArchiveFolder",
 				"type": "Copy",
-				"dependsOn": [
-					{
-						"activity": "Copy Emp Files to EMp Table",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
+				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
 					"retry": 0,
@@ -124,6 +119,8 @@
 			{
 				"name": "Delete1",
 				"type": "Delete",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "Copy Files to ArchiveFolder",
