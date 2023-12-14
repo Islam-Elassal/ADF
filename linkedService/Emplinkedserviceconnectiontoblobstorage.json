@@ -1,0 +1,12 @@
+{
+	"name": "Emplinkedserviceconnectiontoblobstorage",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": "DefaultEndpointsProtocol=https;AccountName=islamstorgeaccount;EndpointSuffix=core.windows.net;",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDExQjg4NUM5LUE4QTItNDM3QS04MzdFLTRERUUyMkE5QkY5OV8xNGZjZGFkNi0zZTllLTRhNDItYmNlNi03ZTllODRmZWQ3YzgiDQp9"
+		}
+	}
+}
